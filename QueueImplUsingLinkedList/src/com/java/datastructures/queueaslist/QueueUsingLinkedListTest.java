@@ -12,11 +12,11 @@ public class QueueUsingLinkedListTest {
 		queue.enqueue(40);
 		
 		//print queue elements
-		queue.print();
+		queue.print(); //10 -> 20 -> 30 -> 40 -> null
 		
 		queue.dequeue();
 		queue.dequeue();
 		System.out.println();
-		queue.print();
+		queue.print(); //30 -> 40 -> null
 	}
 }

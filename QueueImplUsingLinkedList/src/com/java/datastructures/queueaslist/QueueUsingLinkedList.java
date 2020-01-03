@@ -2,16 +2,27 @@ package com.java.datastructures.queueaslist;
 
 import java.util.NoSuchElementException;
 
+/**
+ * Class demonstrates how to implement Queue using LinkedList data structure.
+ * Queue is a type of a linked list that works with the concept of FIFO(First-in First-out).
+ *  
+ * Source: https://www.youtube.com/watch?v=NkrlOf14GdM
+ * 
+ * @author C5258401
+ *
+ */
 public class QueueUsingLinkedList {
 
 	private ListNode front;
 	private ListNode rear;
+	//to store the size of the queue
 	private int length;
 
 	private class ListNode {
-
-		private ListNode next;
+	
 		private int data;
+		//reference to next listnode
+		private ListNode next;
 
 		public ListNode(int data) {
 			this.next = null;
@@ -77,4 +88,5 @@ public class QueueUsingLinkedList {
 		}
 		System.out.print(current);
 	}
+
 }
